@@ -1,0 +1,37 @@
+[
+
+
+
+
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "SS",
+    "category": "websites",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/debugHARSH/portfolio-website.git"
+    }},
+  {
+    "name": "brainmatch game",
+    "desc": "A fun SwiftUI-based memory game where players match emoji card pairs to test their brainpower.",
+    "image": "brainmatch",
+    "category": "swift",
+    "links": {
+      "view": "https://coffeeshop-dun.vercel.app/",
+      "code": "https://github.com/debugHARSH/brainmatch-game.git"
+    }
+  },
+  {
+    "name": "CoffeeWala",
+    "desc": "A stylish and responsive coffee shop website showcasing menu, ambience, and online ordering features using HTML, CSS, and JavaScript.",
+    "image": "coffeewala",
+    "category": "websites",
+    "links": {
+      "view": "https://coffeeshop-dun.vercel.app/",
+      "code": "https://github.com/debugHARSH/coffeeshop.git"
+    }
+  }
+
+
+]
