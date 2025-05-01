@@ -10,7 +10,7 @@
     "category": "websites",
     "links": {
       "view": "#",
-      "code": "https://github.com/debugHARSH/portfolio-website.git"
+      "code": "https://github.com/debugHARSH/portfolio.git"
     }},
   {
     "name": "brainmatch game",
@@ -18,7 +18,7 @@
     "image": "brainmatch",
     "category": "swift",
     "links": {
-      "view": "https://coffeeshop-dun.vercel.app/",
+      "view":  "https://github.com/debugHARSH/brainmatch-game.git",
       "code": "https://github.com/debugHARSH/brainmatch-game.git"
     }
   },
