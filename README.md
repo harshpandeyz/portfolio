@@ -1,4 +1,4 @@
-## Portfolio-Website
+![screencapture-harshporfolio-netlify-app-2025-05-02-18_47_25](https://github.com/user-attachments/assets/0bdabd8c-e973-4761-836a-2a83d3074692)## Portfolio-Website
 Personal portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
 <a href="https://portfolioharshpandey.vercel.app/" target="_blank">**Visit Now** 🚀</a>
@@ -19,7 +19,9 @@ Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome, JSON
 ---
 
 ## 📸 Sneak Peek
-![Portfolio Preview](assets/images/projects/SS.png)
+
+![screencapture-harshporfolio-netlify-app-2025-05-02-18_47_25](https://github.com/user-attachments/assets/063ca4a4-c844-4cd0-807d-6c80b9d201ed)
+
 
 ---
 
