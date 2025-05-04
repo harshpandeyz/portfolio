@@ -18,13 +18,6 @@ Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome, JSON
 
 ---
 
-## 📸 Sneak Peek
-
-![screencapture-harshporfolio-netlify-app-2025-05-02-18_47_25](https://github.com/user-attachments/assets/063ca4a4-c844-4cd0-807d-6c80b9d201ed)
-
-
----
-
 ## 📬 Contact Me
 
 Feel free to connect with me:
