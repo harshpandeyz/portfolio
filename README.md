@@ -1,4 +1,5 @@
-![screencapture-harshporfolio-netlify-app-2025-05-02-18_47_25](https://github.com/user-attachments/assets/0bdabd8c-e973-4761-836a-2a83d3074692)## Portfolio-Website
+<img width="1920" height="6550" alt="portfolio" src="https://github.com/user-attachments/assets/efa6e6a2-e21b-40cc-acc5-3f5f2cf60a0d" />
+## Portfolio-Website
 Personal portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
 
 <a href="https://portfolioharshpandey.vercel.app/" target="_blank">**Visit Now** 🚀</a>
@@ -25,4 +26,5 @@ Feel free to connect with me:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harshpandeyz)  
 
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Harshpandeyz)
+
 
