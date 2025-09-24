@@ -1,8 +1,4 @@
 [
-
-
-
-
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
@@ -11,14 +7,15 @@
     "links": {
       "view": "#",
       "code": "https://github.com/debugHARSH/portfolio.git"
-    }},
+    }
+  },
   {
     "name": "brainmatch game",
     "desc": "A fun SwiftUI-based memory game where players match emoji card pairs to test their brainpower.",
     "image": "brainmatch",
     "category": "swift",
     "links": {
-      "view":  "https://github.com/debugHARSH/brainmatch-game.git",
+      "view": "https://github.com/debugHARSH/brainmatch-game.git",
       "code": "https://github.com/debugHARSH/brainmatch-game.git"
     }
   },
@@ -31,20 +28,15 @@
       "view": "https://coffeeshop-dun.vercel.app/",
       "code": "https://github.com/debugHARSH/coffeeshop.git"
     }
-  }
-
-
+  },
   {
-  "name": "SkillNexus",
-  "desc": "Responsive learning platform with course catalog, promo slider, client-side cart, and demo register/login flows. Built with HTML, CSS, JavaScript & Bootstrap.",
-  "image": "skillnexus",
-  "category": "websites",
-  "links": {
-    "view": "https://skillnexus-harsh.netlify.app/",
-    "code": "https://github.com/harshpandeyz/skillnexus"
+    "name": "SkillNexus",
+    "desc": "Responsive learning platform with course catalog, promo slider, client-side cart, and demo register/login flows. Built with HTML, CSS, JavaScript & Bootstrap.",
+    "image": "skillnexus",
+    "category": "websites",
+    "links": {
+      "view": "https://skillnexus-harsh.netlify.app/",
+      "code": "https://github.com/harshpandeyz/skillnexus"
+    }
   }
-}
-
-
 ]
-
