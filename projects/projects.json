@@ -34,4 +34,17 @@
   }
 
 
+  {
+  "name": "SkillNexus",
+  "desc": "Responsive learning platform with course catalog, promo slider, client-side cart, and demo register/login flows. Built with HTML, CSS, JavaScript & Bootstrap.",
+  "image": "skillnexus",
+  "category": "websites",
+  "links": {
+    "view": "https://skillnexus-harsh.netlify.app/",
+    "code": "https://github.com/harshpandeyz/skillnexus"
+  }
+}
+
+
 ]
+
