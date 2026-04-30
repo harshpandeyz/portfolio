@@ -1,0 +1,127 @@
+[
+    {
+        "name": "Android",
+        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    },
+    {
+        "name": "Kotlin",
+        "icon": "https://img.icons8.com/color/48/000000/kotlin.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "C++",
+        "icon": "https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/color/48/000000/amazon-web-services.png"
+    },
+    {
+        "name": "Git VCS",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "ReactJS",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+    },
+    {
+        "name": "Swift",
+        "icon": "https://img.icons8.com/fluency/48/000000/swift.png"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/color/48/000000/bootstrap.png"
+    },
+    {
+        "name": "REST API",
+        "icon": "https://img.icons8.com/fluency/48/000000/api-settings.png"
+    },
+    {
+        "name": "JSON",
+        "icon": "https://img.icons8.com/color/48/000000/json--v1.png"
+    },
+    {
+        "name": "XML",
+        "icon": "https://img.icons8.com/office/48/000000/xml-file.png"
+    },
+
+    {
+        "name": "Network Design",
+        "icon": "https://img.icons8.com/color/48/000000/network-card.png"
+    },
+    {
+        "name": "Tableau Certified",
+        "icon": "https://img.icons8.com/color/48/000000/tableau-software.png"
+    },
+    {
+        "name": "C Programming",
+        "icon": "https://img.icons8.com/color/48/000000/c-programming.png"
+    },
+    {
+        "name": "Network Administration",
+        "icon": "https://img.icons8.com/fluency/48/000000/maintenance.png"
+    },
+    {
+        "name": "Data Visualization",
+        "icon": "https://img.icons8.com/color/48/000000/data-configuration.png"
+    },
+    {
+        "name": "Problem Solving",
+        "icon": "https://img.icons8.com/color/48/000000/brain.png"
+    },
+    {
+        "name": "Memory Management",
+        "icon": "https://img.icons8.com/color/48/000000/memory-slot.png"
+    },
+    {
+        "name": "Design Thinking",
+        "icon": "https://img.icons8.com/color/48/000000/design.png"
+    },
+    {
+        "name": "Software Project Management",
+        "icon": "https://img.icons8.com/color/48/000000/project-management.png"
+    },
+    {
+        "name": "Networking",
+        "icon": "https://img.icons8.com/ios-filled/50/4a90e2/network-card.png"
+    },
+    {
+        "name": "Event Management",
+        "icon": "https://img.icons8.com/ios-filled/50/f39c12/planner.png"
+    }
+]
