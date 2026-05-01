@@ -11,6 +11,8 @@
     <meta property="og:image" content="assets/images/hero.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://harshporfolio.netlify.app/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/certificates.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -44,15 +46,15 @@
         <div class="content">
             <span class="eyebrow">B.Tech IT student - Pune, India</span>
             <h1>Harsh Pandey</h1>
-            <p class="hero-copy">I am into <span class="typing-text"></span></p>
-            <p class="hero-summary">Full-stack developer and backend-focused engineer building secure APIs, real-time AI systems, and practical products with clean, maintainable code.</p>
+            <p class="hero-copy">Full-stack developer focused on <span class="typing-text"></span></p>
+            <p class="hero-summary">I build secure APIs, backend systems, responsive interfaces, and AI-powered products with clean, maintainable engineering.</p>
             <div class="hero-actions">
                 <a href="#work" class="btn"><span>View Projects</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
                 <a href="#contact" class="btn btn-outline"><span>Contact Me</span><i class="fas fa-paper-plane" aria-hidden="true"></i></a>
             </div>
             <div class="hero-highlights" aria-label="Portfolio highlights">
-                <span><strong class="hero-skills-count">40</strong> Technical Skills</span>
-                <span><strong class="hero-projects-count">2</strong> Featured Projects</span>
+                <span><strong class="hero-skills-count">40</strong> Skills</span>
+                <span><strong class="hero-projects-count" id="project-count">4</strong> Featured Projects</span>
                 <span><strong>25+</strong> Credentials</span>
             </div>
             <div class="socials">
@@ -74,7 +76,7 @@
 
     <section class="about" id="about">
         <span class="section-label">About</span>
-        <h2 class="heading">Backend-minded full-stack builder with a sharp eye for useful systems.</h2>
+        <h2 class="heading">Backend-minded full-stack builder focused on useful systems.</h2>
         <div class="row">
             <div class="image">
                 <img draggable="false" src="./assets/images/about/harsh-pandey.jpg" alt="Harsh Pandey" loading="lazy">
@@ -94,9 +96,13 @@
                     </div>
                 </div>
                 <div class="resumebtn">
-                    <a href="https://docs.google.com/document/d/13aR5fueQMESU61nHX2tgXSuvw-lAtrseSo5oxuqTy-E/export?format=pdf" target="_blank" rel="noopener" class="btn">
-                        <span>Resume</span>
-                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                    <a href="https://docs.google.com/document/d/13aR5fueQMESU61nHX2tgXSuvw-lAtrseSo5oxuqTy-E/edit?usp=sharing" target="_blank" rel="noopener" class="btn">
+                        <span>View Resume</span>
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://docs.google.com/document/d/13aR5fueQMESU61nHX2tgXSuvw-lAtrseSo5oxuqTy-E/export?format=pdf" target="_blank" rel="noopener" class="btn btn-outline" download>
+                        <span>Download PDF</span>
+                        <i class="fas fa-download" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -105,8 +111,8 @@
 
     <section class="skills" id="skills">
         <span class="section-label">Skills</span>
-        <h2 class="heading">A practical technical stack for secure APIs, product interfaces, and AI systems.</h2>
-        <p class="section-sub">Grouped by the way real projects are built: languages, backend, frontend, databases, AI, blockchain, tooling, and fundamentals.</p>
+        <h2 class="heading">Technical stack for APIs, interfaces, and AI systems.</h2>
+        <p class="section-sub">A balanced view of the languages, backend tools, frontend stack, databases, AI, blockchain, DevOps, and fundamentals I use across projects.</p>
         <div class="container">
             <div class="skill-tabs" id="skillsTabs" aria-label="Skill categories"></div>
             <div id="skillsContainer" aria-live="polite"></div>
@@ -144,10 +150,10 @@
     <section class="work" id="work">
         <span class="section-label">Projects</span>
         <h2 class="heading">Production-minded projects with clear engineering depth.</h2>
-        <p class="section-sub">Two focused builds around real-time security systems and backend recommendation infrastructure.</p>
+        <p class="section-sub">Focused builds across portfolio systems, mobile apps, real-time security, and backend recommendation infrastructure.</p>
         <div class="box-container project-grid" id="projectsContainer"></div>
         <div class="viewall">
-            <a href="./projects/" class="btn"><span>View All</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="./projects/index.html" class="btn"><span>View All</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
         </div>
     </section>
 
@@ -165,34 +171,41 @@
             <div class="content contact-shell">
                 <div class="contact-panel">
                     <span class="eyebrow">Available for projects</span>
-                    <h3>Send a message and I will get back as soon as possible.</h3>
-                    <p>I am open to internships, product builds, hackathon collaborations, and developer opportunities.</p>
+                    <h3>Send a concise message and I will follow up.</h3>
+                    <p>I am open to internships, backend engineering work, full-stack product builds, AI systems, and hackathon collaborations.</p>
+                    <div class="contact-meta" aria-label="Contact highlights">
+                        <span><i class="fas fa-briefcase" aria-hidden="true"></i> Internship ready</span>
+                        <span><i class="fas fa-code" aria-hidden="true"></i> Backend + full-stack</span>
+                        <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Pune, India</span>
+                    </div>
                     <a href="mailto:harshap17058@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> harshap17058@gmail.com</a>
                     <a href="https://www.linkedin.com/in/harshpandeyz" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
                 </div>
-                <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <input type="hidden" name="_subject" value="New portfolio contact message">
+                <form id="contact-form" action="https://formsubmit.co/harshap17058@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Portfolio Contact Message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="form-honey" aria-hidden="true">
                     <div class="form-group">
                         <div class="field">
-                            <input type="text" name="name" placeholder="Name" aria-label="Name" autocomplete="name" required>
+                            <label for="contact-name">Name</label>
+                            <input id="contact-name" type="text" name="name" placeholder="Your full name" autocomplete="name" required>
                             <i class="fas fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="field">
-                            <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email" required>
+                            <label for="contact-email">Email</label>
+                            <input id="contact-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
                             <i class="fas fa-envelope" aria-hidden="true"></i>
                         </div>
-                        <div class="field">
-                            <input type="tel" name="phone" placeholder="Phone" aria-label="Phone" autocomplete="tel">
-                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                        </div>
                         <div class="message">
-                            <textarea placeholder="Message" name="message" aria-label="Message" required></textarea>
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" placeholder="Tell me about the role, project, or collaboration." name="message" required></textarea>
                             <i class="fas fa-comment-dots" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="button-area">
-                        <p class="form-status" role="status" aria-live="polite"></p>
-                        <button type="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                        <button type="submit">Send Message <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                     </div>
                 </form>
             </div>
@@ -201,25 +214,21 @@
 </main>
 
 <footer class="footer">
-    <div class="box-container">
-        <div class="box">
-            <h3>Harsh's Portfolio</h3>
-            <p>Thank you for visiting my portfolio. Connect with me for backend engineering, full-stack development, and AI system opportunities.</p>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <h3>Harsh Pandey</h3>
+            <p>Full-stack developer building backend systems, interfaces, and AI products.</p>
         </div>
-        <div class="box">
-            <h3>Quick Links</h3>
-            <a href="#home"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> Home</a>
-            <a href="#about"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> About</a>
-            <a href="#skills"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> Skills</a>
-            <a href="#education"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> Education</a>
-            <a href="#work"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> Projects</a>
-            <a href="#certificates"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> Certificates</a>
-            <a href="#contact"><i class="fas fa-chevron-circle-right" aria-hidden="true"></i> Contact</a>
-        </div>
-        <div class="box">
-            <h3>Contact Info</h3>
-            <p><i class="fas fa-envelope" aria-hidden="true"></i> harshap17058@gmail.com</p>
-            <p><i class="fas fa-map-marked-alt" aria-hidden="true"></i> Pune, India</p>
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-contact">
+            <a href="mailto:harshap17058@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i> harshap17058@gmail.com</a>
             <div class="share">
                 <a href="https://www.linkedin.com/in/harshpandeyz" class="fab fa-linkedin linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
                 <a href="https://github.com/harshpandeyz" class="fab fa-github github" aria-label="GitHub" target="_blank" rel="noopener"></a>
@@ -227,7 +236,7 @@
             </div>
         </div>
     </div>
-    <p class="credit">&copy; 2025 Harsh Pandey. Built with care for the web.</p>
+    <p class="credit">&copy; 2025 Harsh Pandey. Pune, India.</p>
 </footer>
 
 <div class="certificate-modal" id="certificateModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certificateModalTitle">
