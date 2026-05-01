@@ -1,3 +1,4 @@
+
 # Harsh Pandey — Portfolio 🌐💼
 
 A **fast, modern, and fully responsive personal portfolio website** built with pure HTML, CSS, and JavaScript — no frameworks, no fluff. Showcasing projects, skills, certificates, and contact info with smooth animations and a clean UI.
@@ -28,7 +29,7 @@ A **fast, modern, and fully responsive personal portfolio website** built with p
 
 ## 📸 Sneak Peek
 
-![Portfolio Preview]()
+<img width="1344" height="11455" alt="por" src="https://github.com/user-attachments/assets/901d3f4a-8e02-40e1-8514-bf8e3551744f" />
 
 ---
 
