@@ -70,9 +70,9 @@
     if (!container) return;
 
     container.innerHTML = projects.map(function (project, index) {
-      var demoButton = project.demo && project.demo.disabled
-        ? "<button class=\"project-cta disabled\" type=\"button\" disabled title=\"" + escapeAttribute(project.demo.tooltip) + "\">Live Demo <i class=\"fas fa-arrow-right\"></i></button>"
-        : "<a class=\"project-cta\" href=\"" + escapeAttribute(project.demo.url) + "\" target=\"_blank\" rel=\"noopener\">Live Demo <i class=\"fas fa-arrow-right\"></i></a>";
+      var liveDemoBtn = project.liveDemo
+        ? "<a href=\"" + escapeAttribute(project.liveDemo) + "\" target=\"_blank\" rel=\"noopener\" class=\"btn-demo project-cta\">Live Demo <i class=\"fas fa-arrow-right\"></i></a>"
+        : "<span class=\"btn-demo project-cta btn-disabled\" title=\"No live deployment\">Live Demo <i class=\"fas fa-arrow-right\"></i></span>";
 
       return [
         "<article class=\"project-card reveal-item\" data-category=\"" + escapeAttribute(project.category) + "\"",
@@ -97,7 +97,7 @@
         }).join("") + "</div>",
         "<div class=\"project-actions\">",
         "<a class=\"project-cta\" href=\"" + escapeAttribute(project.github) + "\" target=\"_blank\" rel=\"noopener\">GitHub <i class=\"fas fa-arrow-right\"></i></a>",
-        demoButton,
+        liveDemoBtn,
         "</div>",
         "</div>",
         "</article>"

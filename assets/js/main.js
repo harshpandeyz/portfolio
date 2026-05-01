@@ -95,7 +95,7 @@
 
   function initTyping(prefersReducedMotion) {
     var target = document.querySelector(".typing-text");
-    var words = ["Full Stack Developer", "Backend Engineer", "REST API Developer", "AI Enthusiast"];
+    var words = ["secure APIs", "backend systems", "product interfaces", "AI integrations"];
     var wordIndex = 0;
     var charIndex = 0;
     var deleting = false;
@@ -153,7 +153,7 @@
 
     panels.innerHTML = groups.map(function (group, index) {
       return [
-        "<div class=\"skill-panel" + (index === 0 ? " active" : "") + "\"",
+        "<section class=\"skill-panel" + (index === 0 ? " active" : "") + "\"",
         " data-skill-panel=\"" + escapeHtml(group.id) + "\"",
         " style=\"--accent:" + escapeHtml(group.accent) + "\">",
         "<div class=\"skill-panel-head\">",
@@ -163,7 +163,7 @@
         "<div class=\"skill-chip-grid\">",
         group.skills.map(renderSkillChip).join(""),
         "</div>",
-        "</div>"
+        "</section>"
       ].join("");
     }).join("");
 
@@ -176,6 +176,10 @@
         panels.querySelectorAll(".skill-panel").forEach(function (panel) {
           panel.classList.toggle("active", panel.dataset.skillPanel === target);
         });
+        var targetPanel = panels.querySelector("[data-skill-panel=\"" + cssEscape(target) + "\"]");
+        if (targetPanel) {
+          targetPanel.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "nearest" });
+        }
         registerRevealElements(panels, revealObserver, prefersReducedMotion);
       });
     });
@@ -216,9 +220,9 @@
   }
 
   function renderProjectCard(project, index) {
-    var demoButton = project.demo && project.demo.disabled
-      ? "<button class=\"project-cta disabled\" type=\"button\" disabled title=\"" + escapeAttribute(project.demo.tooltip) + "\">Live Demo <i class=\"fas fa-arrow-right\"></i></button>"
-      : "<a class=\"project-cta\" href=\"" + escapeAttribute(project.demo.url) + "\" target=\"_blank\" rel=\"noopener\">Live Demo <i class=\"fas fa-arrow-right\"></i></a>";
+    var liveDemoBtn = project.liveDemo
+      ? "<a href=\"" + escapeAttribute(project.liveDemo) + "\" target=\"_blank\" rel=\"noopener\" class=\"btn-demo project-cta\">Live Demo <i class=\"fas fa-arrow-right\"></i></a>"
+      : "<span class=\"btn-demo project-cta btn-disabled\" title=\"No live deployment\">Live Demo <i class=\"fas fa-arrow-right\"></i></span>";
 
     return [
       "<article class=\"project-card reveal-item\" style=\"--project-gradient:" + escapeAttribute(project.gradient) + "; --reveal-delay:" + (index % 3) * 100 + "ms\">",
@@ -242,7 +246,7 @@
       }).join("") + "</div>",
       "<div class=\"project-actions\">",
       "<a class=\"project-cta\" href=\"" + escapeAttribute(project.github) + "\" target=\"_blank\" rel=\"noopener\">GitHub <i class=\"fas fa-arrow-right\"></i></a>",
-      demoButton,
+      liveDemoBtn,
       "</div>",
       "</div>",
       "</article>"
@@ -250,49 +254,41 @@
   }
 
   function initContactForm() {
-    var form = document.getElementById("contact-form");
-    if (!form) return;
-
-    var button = form.querySelector("button[type=\"submit\"]");
-    var status = form.querySelector(".form-status");
-    var defaultText = button ? button.innerHTML : "";
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      if (!button || !status) return;
-
-      status.textContent = "";
-      status.className = "form-status";
-      button.disabled = true;
-      button.innerHTML = "<i class=\"fas fa-spinner fa-spin\"></i> Sending";
-
-      if (form.action.indexOf("YOUR_FORM_ID") !== -1) {
+    const contactForm = document.querySelector("#contact-form");
+    if (contactForm) {
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const button = contactForm.querySelector("button[type=\"submit\"]");
+        const name = contactForm.querySelector("[name=\"name\"]").value.trim();
+        const email = contactForm.querySelector("[name=\"email\"]").value.trim();
+        const message = contactForm.querySelector("[name=\"message\"]").value.trim();
+        if (!name || !email || !message) {
+          showFormStatus("Please fill in all fields.", "error");
+          return;
+        }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          showFormStatus("Please enter a valid email address.", "error");
+          return;
+        }
+        showFormStatus("Sending your message...", "success");
+        if (button) button.disabled = true;
         window.setTimeout(function () {
-          status.textContent = "Formspree is wired in. Replace YOUR_FORM_ID with the live Formspree form ID before deployment.";
-          status.classList.add("error");
-          button.disabled = false;
-          button.innerHTML = defaultText;
-        }, 350);
-        return;
-      }
-
-      fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-        headers: { Accept: "application/json" }
-      }).then(function (response) {
-        if (!response.ok) throw new Error("Form submission failed");
-        form.reset();
-        status.textContent = "Message sent successfully. I will get back to you soon.";
-        status.classList.add("success");
-      }).catch(function () {
-        status.textContent = "Could not send the message right now. Please email me directly.";
-        status.classList.add("error");
-      }).finally(function () {
-        button.disabled = false;
-        button.innerHTML = defaultText;
+          HTMLFormElement.prototype.submit.call(contactForm);
+        }, 250);
       });
-    });
+    }
+    function showFormStatus(msg, type) {
+      let el = document.querySelector("#form-status");
+      if (!el) {
+        el = document.createElement("p");
+        el.id = "form-status";
+        contactForm.appendChild(el);
+      }
+      el.textContent = msg;
+      el.style.color = type === "success" ? "#22c55e" : "#ef4444";
+      el.style.marginTop = "8px";
+      el.style.fontSize = "14px";
+    }
   }
 
   function createRevealObserver(prefersReducedMotion) {
@@ -308,7 +304,7 @@
   }
 
   function registerRevealElements(root, revealObserver, prefersReducedMotion) {
-    var elements = root.querySelectorAll(".section-label, .heading, .section-sub, .about-card, .skill-panel.active .skill-chip, .project-card, .education-card, .contact-shell, .footer .box");
+    var elements = root.querySelectorAll(".section-label, .heading, .section-sub, .about-card, .skill-panel, .skill-chip, .project-card, .education-card, .contact-shell, .footer-inner");
 
     elements.forEach(function (element, index) {
       if (!element.classList.contains("reveal-item")) {
@@ -345,5 +341,12 @@
 
   function escapeAttribute(value) {
     return escapeHtml(value);
+  }
+
+  function cssEscape(value) {
+    if (window.CSS && typeof window.CSS.escape === "function") {
+      return window.CSS.escape(value);
+    }
+    return String(value).replace(/"/g, "\\\"");
   }
 })();

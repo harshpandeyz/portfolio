@@ -8,9 +8,8 @@
     font-size: 0.82rem;
   }
 
-  .work .box-container,
   .projects-archive .box-container,
-  .project-grid,
+  #skillsContainer,
   .cert-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -66,6 +65,7 @@
   .home {
     min-height: auto;
     padding-top: 4rem;
+    gap: 2.5rem;
   }
 
   .home .image {
@@ -86,8 +86,18 @@
     border-bottom: 1px solid var(--border);
   }
 
-  .footer .box-container {
-    grid-template-columns: 1fr 1fr;
+  .footer-inner {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+
+  .footer-contact {
+    justify-content: flex-start;
   }
 }
 
@@ -97,7 +107,7 @@
   }
 
   .heading {
-    font-size: clamp(1.75rem, 8vw, 2.65rem);
+    font-size: clamp(1.75rem, 7vw, 2.45rem);
     line-height: 1.16;
   }
 
@@ -112,11 +122,12 @@
 
   .hero-highlights,
   .about .box-container,
+  #skillsContainer,
+  .form-group,
   .work .box-container,
   .projects-archive .box-container,
   .project-grid,
-  .cert-container,
-  .footer .box-container {
+  .cert-container {
     grid-template-columns: 1fr;
   }
 
@@ -125,6 +136,9 @@
   }
 
   .hero-actions .btn,
+  .resumebtn .btn,
+  .project-actions,
+  .project-cta,
   .button-area,
   .button-area button {
     width: 100%;
@@ -133,6 +147,20 @@
   .button-area {
     flex-direction: column-reverse;
     align-items: stretch;
+  }
+
+  .form-status {
+    min-height: auto;
+  }
+
+  .footer {
+    padding-top: 24px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   .floating-card {
@@ -174,6 +202,10 @@
     max-width: 100%;
   }
 
+  .skill-chip-grid {
+    grid-template-columns: 1fr;
+  }
+
   .education .box-container::before {
     left: 12px;
   }
@@ -195,9 +227,8 @@
     min-height: 104px;
   }
 
-  .project-actions,
-  .project-cta {
-    width: 100%;
+  .project-actions {
+    flex-wrap: wrap;
   }
 
   .cert-info p span {
@@ -231,6 +262,18 @@
     padding-top: 3rem;
   }
 
+  .heading {
+    font-size: clamp(1.65rem, 7.2vw, 2.15rem);
+  }
+
+  .home h1 {
+    font-size: clamp(2.65rem, 13vw, 4.1rem);
+  }
+
+  .section-sub {
+    font-size: 0.96rem;
+  }
+
   .hero-grid {
     display: none;
   }
@@ -239,10 +282,19 @@
     width: min(292px, 90vw);
   }
 
+  .contact-meta span,
+  .contact-panel a {
+    width: 100%;
+  }
+
   .about-card,
   .contact form,
   .contact-panel {
     padding: 22px;
+  }
+
+  .footer-links {
+    gap: 6px;
   }
 
   .cert-preview {
