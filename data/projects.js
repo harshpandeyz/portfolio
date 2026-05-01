@@ -2,6 +2,42 @@ window.PORTFOLIO_DATA = window.PORTFOLIO_DATA || {};
 
 window.PORTFOLIO_DATA.projects = [
   {
+    id: "portfolio-website",
+    title: "Portfolio Website",
+    subtitle: "Responsive Personal Portfolio",
+    category: "web-frontend",
+    categoryLabel: "Web / Frontend",
+    description: "A responsive personal portfolio with polished sections, animated interactions, certificates, project archives, and a clean developer brand system.",
+    features: [
+      "Responsive single-page layout with smooth section navigation",
+      "Dynamic skills, projects, and certificate data rendering",
+      "Accessible navigation, contact, and project archive flows",
+      "Animated reveal states and mobile-friendly hamburger menu"
+    ],
+    techStack: ["HTML", "CSS", "JavaScript", "Responsive UI", "Accessibility"],
+    github: "https://github.com/debugHARSH/portfolio.git",
+    liveDemo: null,
+    gradient: "linear-gradient(135deg, #38BDF8 0%, #2563EB 48%, #F97316 100%)"
+  },
+  {
+    id: "brainmatch-game",
+    title: "Brainmatch Game",
+    subtitle: "SwiftUI Memory Game",
+    category: "mobile-ios",
+    categoryLabel: "Mobile / iOS",
+    description: "A SwiftUI memory game where players match card pairs through a clean mobile-first interface and lightweight game logic.",
+    features: [
+      "Card matching game loop with simple state management",
+      "SwiftUI-based mobile interface",
+      "Replayable memory challenge interaction",
+      "Public source code for learning and iteration"
+    ],
+    techStack: ["SwiftUI", "iOS", "Game Logic", "Mobile UI"],
+    github: "https://github.com/debugHARSH/brainmatch-game.git",
+    liveDemo: null,
+    gradient: "linear-gradient(135deg, #F97316 0%, #EC4899 48%, #6366F1 100%)"
+  },
+  {
     id: "intelligent-mob-surveillance-system",
     title: "Intelligent Mob Surveillance System",
     subtitle: "AI + Blockchain CCTV Security Platform",
@@ -19,17 +55,12 @@ window.PORTFOLIO_DATA.projects = [
     ],
     techStack: ["Python", "FastAPI", "YOLOv8", "OpenCV", "MediaPipe", "MongoDB", "JWT", "React", "Solidity", "Ethereum", "Web3.py", "AES-256"],
     github: "https://github.com/harshpandeyz/Intelligent-Mob-Surveillance-System",
-    demo: {
-      label: "Requires Hardware Setup",
-      url: "",
-      disabled: true,
-      tooltip: "Requires Hardware Setup"
-    },
+    liveDemo: null,
     gradient: "linear-gradient(135deg, #0EA5E9 0%, #7C3AED 48%, #F97316 100%)"
   },
   {
     id: "skillmatch-course-recommendation-engine",
-    title: "SkillMatch - Course Recommendation Engine",
+    title: "SkillMatch — Course Recommendation Engine",
     subtitle: "Personalized Learning Path Generator",
     category: "backend-api-database",
     categoryLabel: "Backend / API / Database",
@@ -43,12 +74,7 @@ window.PORTFOLIO_DATA.projects = [
     ],
     techStack: ["Node.js", "Express.js", "MySQL", "REST APIs", "JWT", "Postman"],
     github: "https://github.com/harshpandeyz/SkillMatch",
-    demo: {
-      label: "Backend API project",
-      url: "",
-      disabled: true,
-      tooltip: "API Project"
-    },
+    liveDemo: null,
     gradient: "linear-gradient(135deg, #22C55E 0%, #0EA5E9 54%, #312E81 100%)"
   }
 ];
