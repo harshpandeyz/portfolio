@@ -1,0 +1,255 @@
+@media (max-width: 1120px) {
+  header {
+    width: calc(100% - 24px);
+  }
+
+  .navbar a {
+    padding-inline: 9px;
+    font-size: 0.82rem;
+  }
+
+  .work .box-container,
+  .projects-archive .box-container,
+  .project-grid,
+  .cert-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 960px) {
+  #menu {
+    display: grid;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 86px;
+    right: -120%;
+    width: min(360px, calc(100vw - 24px));
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    background: rgba(15, 23, 42, 0.96);
+    box-shadow: var(--shadow-md);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition: right var(--ease-long);
+  }
+
+  .navbar.nav-open {
+    right: 12px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+  }
+
+  .navbar a {
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 14px;
+    font-size: 0.98rem;
+  }
+
+  .navbar a::after {
+    display: none;
+  }
+
+  .home,
+  .about .row,
+  .contact .content {
+    grid-template-columns: 1fr;
+  }
+
+  .home {
+    min-height: auto;
+    padding-top: 4rem;
+  }
+
+  .home .image {
+    order: -1;
+  }
+
+  .portrait-card {
+    width: min(330px, 88vw);
+  }
+
+  .about .image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .footer .box-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  section {
+    padding: 3.75rem 5vw;
+  }
+
+  .heading {
+    font-size: clamp(1.75rem, 8vw, 2.65rem);
+    line-height: 1.16;
+  }
+
+  .section-label::before,
+  .section-label::after {
+    width: 32px;
+  }
+
+  .home h1 {
+    font-size: clamp(3rem, 14vw, 4.8rem);
+  }
+
+  .hero-highlights,
+  .about .box-container,
+  .work .box-container,
+  .projects-archive .box-container,
+  .project-grid,
+  .cert-container,
+  .footer .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-highlights {
+    display: none;
+  }
+
+  .hero-actions .btn,
+  .button-area,
+  .button-area button {
+    width: 100%;
+  }
+
+  .button-area {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .floating-card {
+    display: none;
+  }
+
+  .skill-tabs,
+  .cert-tabs,
+  .filter-bar {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+
+  .skill-tabs::-webkit-scrollbar,
+  .cert-tabs::-webkit-scrollbar,
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .skill-tab,
+  .cert-tab,
+  .filter-btn {
+    white-space: nowrap;
+  }
+
+  .skill-panel {
+    padding: 18px;
+  }
+
+  .skill-panel-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .skill-chip {
+    max-width: 100%;
+  }
+
+  .education .box-container::before {
+    left: 12px;
+  }
+
+  .education-card {
+    grid-template-columns: 1fr;
+    margin-left: 36px;
+  }
+
+  .education-card::before {
+    left: -32px;
+  }
+
+  .education-card .image {
+    min-height: 156px;
+  }
+
+  .project-banner {
+    min-height: 104px;
+  }
+
+  .project-actions,
+  .project-cta {
+    width: 100%;
+  }
+
+  .cert-info p span {
+    float: none;
+    display: block;
+    margin-top: 2px;
+  }
+
+  .modal-header {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-actions {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    top: 8px;
+    width: calc(100% - 16px);
+    height: 64px;
+    padding-left: 14px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .home {
+    padding-top: 3rem;
+  }
+
+  .hero-grid {
+    display: none;
+  }
+
+  .portrait-card {
+    width: min(292px, 90vw);
+  }
+
+  .about-card,
+  .contact form,
+  .contact-panel {
+    padding: 22px;
+  }
+
+  .cert-preview {
+    height: 174px;
+  }
+
+  #scroll-top {
+    right: 14px;
+  }
+}

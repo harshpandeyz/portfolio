@@ -1,31 +1,38 @@
-<img width="1920" height="6550" alt="portfolio" src="https://github.com/user-attachments/assets/efa6e6a2-e21b-40cc-acc5-3f5f2cf60a0d" />
-## Portfolio-Website
-Personal portfolio website built using HTML5, CSS3, JavaScript, and jQuery.
+# Harsh Pandey Portfolio
 
-<a href="https://portfolioharshpandey.vercel.app/" target="_blank">**Visit Now** 🚀</a>
+Production-ready developer portfolio for Harsh Pandey, focused on full-stack development, backend engineering, AI systems, blockchain evidence logging, and secure REST APIs.
 
----
+## Structure
 
-## 📌 Tech Stack
-[![HTML](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white)](https://github.com/yourusername/Portfolio-Website/search?l=html)&nbsp;  
-[![CSS](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white)](https://github.com/yourusername/Portfolio-Website/search?l=css)&nbsp;  
-[![JS](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://github.com/yourusername/Portfolio-Website/search?l=javascript)&nbsp;  
-<img alt="jQuery" src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"/>
+```text
+portfolio/
+├── index.html
+├── 404.html
+├── projects/
+│   └── index.html
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── data/
+│   ├── skills.js
+│   ├── projects.js
+│   └── certificates.js
+└── netlify.toml
+```
 
----
+## Local Preview
 
-### 🎨 Extras
-Particle.js, Typed.js, Tilt.js, Scroll Reveal, Tawk.to, Font Awesome, JSON
+This is a static HTML/CSS/JS project. Serve it from the project root so data files and certificate previews load correctly.
 
----
+```bash
+python -m http.server 4173
+```
 
-## 📬 Contact Me
+Then open `http://localhost:4173`.
 
-Feel free to connect with me:
+## Notes
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harshpandeyz)  
-
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/Harshpandeyz)
-
-
-
+- Skills, projects, and certificates are centralized in `data/`.
+- Certificate PDF thumbnails are rendered with PDF.js.
+- Contact form UI is wired for Formspree. Replace `YOUR_FORM_ID` in `index.html` with the live Formspree form ID before deployment.
