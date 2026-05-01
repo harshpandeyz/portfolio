@@ -29,12 +29,25 @@ $(document).ready(function () {
         });
     });
 
-    // smooth scrolling
+    // FIX #15 — Smooth scroll was landing with headings hidden behind the
+    // fixed navbar because it scrolled to the raw element top with no offset.
+    // We now subtract the navbar height (65px) so the target section is fully
+    // visible after scrolling.  A null-guard is also added so clicking any
+    // anchor whose target does not exist on the page (e.g. external #links)
+    // does not throw a TypeError and break the handler entirely.
+    const NAVBAR_HEIGHT = 65;
+
     $('a[href*="#"]').on('click', function (e) {
+        const target = $(this).attr('href');
+        const $target = $(target);
+
+        // Only intercept anchors that resolve to an element on this page
+        if (!$target.length) return;
+
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top,
-        }, 500, 'linear')
+            scrollTop: $target.offset().top - NAVBAR_HEIGHT,
+        }, 500, 'linear');
     });
 
     // emailjs contact form
@@ -122,13 +135,20 @@ function showProjects(projects) {
     });
     projectsContainer.innerHTML = projectHTML;
 
+    // FIX #16 — VanillaTilt.init is called here, inside the .then() callback,
+    // AFTER the project HTML has been injected into the DOM. The old code also
+    // called VanillaTilt.init globally below (before the async fetch resolved),
+    // meaning querySelectorAll('.tilt') returned an empty NodeList every time
+    // and no tilt effect was ever applied. The duplicate global call is removed.
     VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 15 });
 }
 
 fetchData().then(data => { showSkills(data); });
 fetchData("projects").then(data => { showProjects(data); });
 
-VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 15 });
+// FIX #16 — Removed the premature global VanillaTilt.init() call that was
+// here. Projects are loaded asynchronously, so .tilt elements do not exist
+// in the DOM at this point. The init now lives inside showProjects() above.
 
 // disable developer tools
 document.onkeydown = function (e) {
@@ -168,11 +188,15 @@ function filterCerts(event, cat) {
 // ===================== CERTIFICATE FILTER END =====================
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
+// FIX #17 — Changed reset from true to false.
+// reset: true was making every element disappear again when the user
+// scrolled back up, causing a jarring flicker on re-entry. Elements
+// now animate in once and stay visible, which is the expected UX.
 const srtop = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 1000,
-    reset: true
+    reset: false,
 });
 
 /* SCROLL HOME */
