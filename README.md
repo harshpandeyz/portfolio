@@ -1,24 +1,38 @@
 # Harsh Pandey Portfolio
 
-Production-ready developer portfolio for Harsh Pandey, focused on full-stack development, backend engineering, AI systems, blockchain evidence logging, and secure REST APIs.
+Production-ready static portfolio for Harsh Pandey, focused on full-stack development, backend engineering, AI systems, blockchain evidence logging, and secure REST APIs.
 
 ## Structure
 
 ```text
 portfolio/
-├── index.html
-├── 404.html
-├── projects/
-│   └── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── data/
-│   ├── skills.js
-│   ├── projects.js
-│   └── certificates.js
-└── netlify.toml
+|-- index.html
+|-- 404.html
+|-- netlify.toml
+|-- projects/
+|   `-- index.html
+|-- data/
+|   |-- skills.js
+|   |-- projects.js
+|   `-- certificates.js
+`-- assets/
+    |-- css/
+    |   |-- style.css
+    |   |-- responsive.css
+    |   |-- certificates.css
+    |   |-- projects.css
+    |   `-- 404.css
+    |-- js/
+    |   |-- main.js
+    |   |-- projects.js
+    |   `-- certificates.js
+    `-- images/
+        |-- about/
+        |-- certificates/
+        |-- education/
+        |-- hero/
+        |-- favicon.png
+        `-- hero.png
 ```
 
 ## Local Preview
@@ -35,4 +49,5 @@ Then open `http://localhost:4173`.
 
 - Skills, projects, and certificates are centralized in `data/`.
 - Certificate PDF thumbnails are rendered with PDF.js.
-- Contact form UI is wired for Formspree. Replace `YOUR_FORM_ID` in `index.html` with the live Formspree form ID before deployment.
+- The contact form opens a prefilled email addressed to `harshap17058@gmail.com`.
+- Generated validation screenshots should stay out of the repo via `.gitignore`.
