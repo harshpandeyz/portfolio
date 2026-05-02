@@ -15,51 +15,51 @@ window.PORTFOLIO_DATA.certificateIssuers = {
 
 window.PORTFOLIO_DATA.certificates = [
   {
-    title: "Backend Development & API Creation",
+    title: "Backend Development and API Creation",
     issuer: "Coursera",
     issuerKey: "coursera",
     group: "coursera",
-    year: "2024-2025",
+    year: "Apr 10, 2026",
     file: "assets/images/certificates/Coursera backend developement and api creation.pdf"
   },
   {
-    title: "Node.js & MongoDB - Developing Backend",
+    title: "Node.js & MongoDB: Developing Back-end Database Applications",
     issuer: "Coursera",
     issuerKey: "coursera",
     group: "coursera",
-    year: "2024-2025",
+    year: "Apr 24, 2026",
     file: "assets/images/certificates/Nodejs & MongoDB Developing Backend-couresera.pdf"
   },
   {
-    title: "Selenium Automation & Testing Frameworks",
+    title: "Selenium Automation and Testing Frameworks",
     issuer: "Coursera",
     issuerKey: "coursera",
     group: "coursera",
-    year: "2024-2025",
+    year: "Apr 27, 2026",
     file: "assets/images/certificates/Coursera Selenium Automation and Testing Frameworks.pdf"
   },
   {
-    title: "Backend Development",
+    title: "Developing Back-End Apps with Node.js and Express",
     issuer: "Coursera",
     issuerKey: "coursera",
     group: "coursera",
-    year: "2024-2025",
+    year: "Feb 27, 2026",
     file: "assets/images/certificates/Coursera backend.pdf"
   },
   {
-    title: "Web Design",
+    title: "Web Design: Wireframes to Prototypes",
     issuer: "Coursera",
     issuerKey: "coursera",
     group: "coursera",
-    year: "2024-2025",
+    year: "Jan 2, 2026",
     file: "assets/images/certificates/Coursera  certificate web design.pdf"
   },
   {
-    title: "High-Fidelity Prototype with Figma",
+    title: "Create a High-Fidelity Prototype with Figma",
     issuer: "Coursera",
     issuerKey: "coursera",
     group: "coursera",
-    year: "2024-2025",
+    year: "Apr 17, 2026",
     file: "assets/images/certificates/Coursera Create a High-Fidelity Prototype with Figma.pdf"
   },
   {
@@ -67,31 +67,31 @@ window.PORTFOLIO_DATA.certificates = [
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 9, 2025",
     file: "assets/images/certificates/infosys Cloud Technologies.pdf"
   },
   {
-    title: "Software Engineering & Agile Development",
+    title: "Software Engineering and Agile Software Development",
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 7, 2025",
     file: "assets/images/certificates/infosys Software Engineering and Agile software development.pdf"
   },
   {
-    title: "Database Management System",
+    title: "Database Management System - Science Graduates",
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 7, 2025",
     file: "assets/images/certificates/infosys Database Management System - Science Graduates.pdf"
   },
   {
-    title: "Hands-On Data Visualization with Power BI",
+    title: "Hands-On Data Visualization with Microsoft Power BI",
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 13, 2025",
     file: "assets/images/certificates/infosys Hands-On Data Visualization with Microsoft Power BI.pdf"
   },
   {
@@ -99,7 +99,7 @@ window.PORTFOLIO_DATA.certificates = [
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 13, 2025",
     file: "assets/images/certificates/infosys Power BI Training.pdf"
   },
   {
@@ -107,15 +107,15 @@ window.PORTFOLIO_DATA.certificates = [
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 8, 2025",
     file: "assets/images/certificates/infosys Agile Scrum in Practice.pdf"
   },
   {
-    title: "Entity Relationship (ER) Modeling",
+    title: "Introduction to Entity Relationship ER Modeling",
     issuer: "Infosys Springboard",
     issuerKey: "infosys",
     group: "infosys",
-    year: "2024-2025",
+    year: "Jun 7, 2025",
     file: "assets/images/certificates/infosys Introduction to Entity Relationship ER Modeling.pdf"
   },
   {
@@ -123,47 +123,47 @@ window.PORTFOLIO_DATA.certificates = [
     issuer: "MongoDB University",
     issuerKey: "mongodb",
     group: "mongodb",
-    year: "2024-2025",
+    year: "Aug 9, 2024",
     file: "assets/images/certificates/mongodb java developer harsh pandey.pdf"
   },
   {
-    title: "Java Programming",
+    title: "Java Training",
     issuer: "Spoken Tutorial, IIT Bombay",
     issuerKey: "spoken",
     group: "spoken",
-    year: "2024-2025",
+    year: "May 15, 2025",
     file: "assets/images/certificates/java-spoken tutorial certificate.pdf"
   },
   {
-    title: "SQL",
+    title: "PHP and MySQL Training",
     issuer: "Spoken Tutorial, IIT Bombay",
     issuerKey: "spoken",
     group: "spoken",
-    year: "2024-2025",
+    year: "Nov 14, 2025",
     file: "assets/images/certificates/sql-spoken tutorial certificate.pdf"
   },
   {
-    title: "Git",
+    title: "Git Training",
     issuer: "Spoken Tutorial, IIT Bombay",
     issuerKey: "spoken",
     group: "spoken",
-    year: "2024-2025",
+    year: "Apr 30, 2026",
     file: "assets/images/certificates/git-spoken tutorial certificate.pdf"
   },
   {
-    title: "C Programming - Introduction",
+    title: "Introduction to C",
     issuer: "Spoken Tutorial, IIT Bombay",
     issuerKey: "spoken",
     group: "spoken",
-    year: "2024-2025",
+    year: "Nov 19, 2024",
     file: "assets/images/certificates/c introduction harsh.pdf"
   },
   {
-    title: "C++ Introduction",
+    title: "Introduction to C++",
     issuer: "Spoken Tutorial, IIT Bombay",
     issuerKey: "spoken",
     group: "spoken",
-    year: "2024-2025",
+    year: "Nov 19, 2024",
     file: "assets/images/certificates/INTRODUCTION TO C++.pdf"
   },
   {
@@ -171,7 +171,7 @@ window.PORTFOLIO_DATA.certificates = [
     issuer: "Cisco",
     issuerKey: "cisco",
     group: "others",
-    year: "2024-2025",
+    year: "Apr 12, 2025",
     file: "assets/images/certificates/Networking_Basics_certificate.pdf"
   },
   {
@@ -179,39 +179,39 @@ window.PORTFOLIO_DATA.certificates = [
     issuer: "Tableau",
     issuerKey: "tableau",
     group: "others",
-    year: "2024-2025",
+    year: "Feb 21, 2025",
     file: "assets/images/certificates/tableau fundamental certificate.jpg"
   },
   {
-    title: "IBM Certification",
+    title: "Ethical Considerations for Generative AI",
     issuer: "IBM",
     issuerKey: "ibm",
     group: "others",
-    year: "2024-2025",
+    year: "2024",
     file: "assets/images/certificates/ibm.png"
   },
   {
-    title: "Smart India Hackathon (SIH) - Participant",
+    title: "Smart India Hackathon (SIH) 2024 - Participant",
     issuer: "Government of India",
     issuerKey: "government",
     group: "others",
-    year: "2024",
+    year: "Sep 9, 2024",
     file: "assets/images/certificates/SIH CERTYIFICATE.jpg"
   },
   {
-    title: "IdeaSpark PBL Certificate - Best Idea Award Winner",
+    title: "IdeaSpark 2K24 - Best Idea Award",
     issuer: "MIT-ADT University",
     issuerKey: "ideaspark",
     group: "others",
-    year: "Sept 2024",
+    year: "Sep 2, 2024",
     file: "assets/images/certificates/pbl certificate ideaspark.jpg"
   },
   {
-    title: "Lingua Skills",
+    title: "Linguaskill General",
     issuer: "Language Certification",
     issuerKey: "language",
     group: "others",
-    year: "2024-2025",
+    year: "Mar 19, 2024",
     file: "assets/images/certificates/Harsh Pandey  lingua skills.pdf"
   }
 ];
